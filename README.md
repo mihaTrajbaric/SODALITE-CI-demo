@@ -65,7 +65,7 @@ template: |
 
 Which produces draft like this:
 
-<img src="design/screenshot-2.png" alt="Screenshot of generated draft release with categories" width="586" />
+<img src="design/screenshot-1.png" alt="Screenshot of generated draft release with categories" width="586" />
 
 Note only Pull Requests will appear as `changes` so making PRs instead of committing directly to master is a necessity.
 ### Basic configuration options
