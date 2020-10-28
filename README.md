@@ -1,9 +1,14 @@
 # SODALITE Continous Integration demo
 Repository to demonstrate Github Actions, used in [SODALITE-EU](https://github.com/SODALITE-EU) Continous Integration.
 
+## Quick Start
+To implement SODALITE Continous Integration to your Repository, just copy [.github](.github) directory.
+
 ## GitHub Actions Workflow
 Both [Release Drafter](https://github.com/marketplace/actions/release-drafter) and [PR Labeler](https://github.com/marketplace/actions/pr-labeler) can be used in [GitHub Actions Workflows](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions) by configuring a YAML-based files in [.github/workflows](.github/workflows) dir.
 
+### Checking progress
+Workflows' progress can be inspected on [Actions tab](https://github.com/mihaTrajbaric/SODALITE-CI-demo/actions). Repository owners can also Re-run jobs and delete or edit workflows. 
 
 ## PR Labeler
 [PR Labeler](https://github.com/marketplace/actions/pr-labeler) is a GitHub Action that automatically applies labels to your Pull Requests based on branch name patterns like `feature/*` or `fix/*`
@@ -41,7 +46,7 @@ categories:
   - title: '🧰 Maintenance'
     label: 'chore'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+change-title-escapes: '\<*_&'
 version-resolver:
   major:
     labels:
@@ -59,9 +64,10 @@ template: |
 ```
 
 Which produces draft like this:
+
 <img src="design/screenshot-2.png" alt="Screenshot of generated draft release with categories" width="586" />
 
-Note only Pull Requests will appear as `changes` so making PRs instead of committing directly to master is strongly suggested.
+Note only Pull Requests will appear as `changes` so making PRs instead of committing directly to master is a necessity.
 ### Basic configuration options
 
 #### Categories
